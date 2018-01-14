@@ -7,7 +7,7 @@
     fxLayoutGap.xs="0">
 
     
-  <div fxFlex="40" *ngIf="dish">
+  <div fxFlex="40" *ngIf="dish" [@visibility]="visibility">
     <div fxFlex >
       <md-card>
           <md-card-header>
@@ -23,7 +23,6 @@
           <md-card-actions>
             <button md-button [routerLink]="['/dishdetail', prev]"><span class="fa fa-chevron-left fa-lg"></span></button>
             <button md-button (click)="goBack()">BACK</button>
-            
             <span class="flex-spacer"></span>
             <button md-button [routerLink]="['/dishdetail', next]"><span class="fa fa-chevron-right fa-lg"></span></button>
           </md-card-actions>
@@ -32,7 +31,7 @@
   </div>
 
 
-  <div fxFlex="40" *ngIf="dish">
+  <div fxFlex="40" *ngIf="dish" [@visibility]="visibility">
       <div>
         <h3>Comments</h3>
         <hr>
