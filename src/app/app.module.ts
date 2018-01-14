@@ -22,7 +22,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { PromotionService } from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
-import { LoginComponent } from './login/login.component';
+
 
 
 @NgModule({
@@ -34,8 +34,7 @@ import { LoginComponent } from './login/login.component';
    FooterComponent,
    AboutComponent,
    HomeComponent,
-   ContactComponent,
-   LoginComponent
+   ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -50,9 +49,6 @@ import { LoginComponent } from './login/login.component';
   providers: [DishService, 
     PromotionService, 
     LeaderService],
-    entryComponents: [
-      LoginComponent
-    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
